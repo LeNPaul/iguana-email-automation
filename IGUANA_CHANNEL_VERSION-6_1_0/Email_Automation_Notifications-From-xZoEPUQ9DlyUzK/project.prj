@@ -1,0 +1,14 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "retry",
+        "scheduler"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1529443164",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

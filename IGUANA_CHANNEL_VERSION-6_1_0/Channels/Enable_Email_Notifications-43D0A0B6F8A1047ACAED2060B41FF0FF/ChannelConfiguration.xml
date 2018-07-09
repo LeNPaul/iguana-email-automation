@@ -1,0 +1,27 @@
+<channel
+   name="Enable Email Notifications"
+   guid="43D0A0B6F8A1047ACAED2060B41FF0FF"
+   description="The purpose of this channel is to regularly poll the logs file for the email autoresponder automation script."
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_mapper
+      guid="Email_Automation_Notifications-From-xZoEPUQ9DlyUzK"
+      commit_id="3d10e7705b43b6c01362e627fa7080c835acdbb5"
+      commit_comment="Update"
+      poll_time="10000">
+   </from_mapper>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      keep_vmd_updated="false"
+      original_vmd_path=""
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
