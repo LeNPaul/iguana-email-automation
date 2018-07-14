@@ -1,11 +1,12 @@
 {
     "LocalDependencies": [],
     "LuaDependencies": [
+        "emailUtil",
         "retry",
         "scheduler"
     ],
     "OtherDependencies": [],
-    "timestamp": "1529443493",
+    "timestamp": "1531541568",
     "version_info": {
         "build": 0,
         "major": 6,

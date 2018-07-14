@@ -9,7 +9,7 @@
    </to_channel>
    <from_mapper
       guid="Email_Automation_Notifications-From-xZoEPUQ9DlyUzK"
-      commit_id="3d10e7705b43b6c01362e627fa7080c835acdbb5"
+      commit_id="9c0e1c59cd3972e53a296a63f8af4c54cb9d600d"
       commit_comment="Update"
       poll_time="10000">
    </from_mapper>

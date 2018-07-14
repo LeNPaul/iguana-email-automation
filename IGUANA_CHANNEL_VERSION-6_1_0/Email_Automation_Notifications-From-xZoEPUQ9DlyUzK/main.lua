@@ -1,50 +1,7 @@
+local autoresponder = require 'emailUtil'
 local retry = require 'retry'
 local scheduler = {}
 scheduler.runAt = require 'scheduler'
-
-local function callAPI(URL)
-
-   local result, code = net.http.get{url=URL, timeout=120, live=false}
-
-   if code == 200 then 
-      iguana.logInfo('Email automation successful!')
-      return true
-   else
-      error('Email automation failed!')
-   end
-
-end
-
-local function ping()
-
-   local callUrl = 'http://localhost:5000'
-
-   local result, code = net.http.get{url=callUrl, timeout=120, live=false}
-
-   if code == 200 then 
-      iguana.logInfo('Ping successful!')
-      return true
-   else
-      error('Ping failed!')
-   end
-
-end
-
-local function enable()
-
-   local callUrl = 'http://localhost:5000/enable'
-
-   retry.call{func=callAPI, arg1=callUrl,retry=4, pause=45}
-
-end
-
-local function disable()
-
-   local callUrl = 'http://localhost:5000/disable'
-
-   retry.call{func=callAPI, arg1=callUrl,retry=4, pause=45}
-
-end
 
 function main()
 
@@ -65,7 +22,7 @@ function main()
    }
 
    if minutes:sub(2,2) == '0' and seconds:sub(1,1) == '0' then 
-      retry.call{func=ping, arg1=callUrl,retry=4, pause=45}
+      retry.call{func=autoresponder.ping, arg1=callUrl,retry=4, pause=45}
    end
 
    if weekday ~= 'Saturday' and weekday ~= 'Sunday' then
@@ -75,7 +32,7 @@ function main()
          date ~= holidays[5] and date ~= holidays[6] then 
 
          -- Enable email automation
-         scheduler.runAt(17, enable)
+         scheduler.runAt(17, autoresponder.enable)
 
       end
 

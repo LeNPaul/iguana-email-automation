@@ -9,8 +9,8 @@
    </to_channel>
    <from_mapper
       guid="Disable_Email_Notifications-From-XqzdGMt8yH0jkT"
-      commit_id="7d6cc7a72e4024ddf969cfa986b7ad8ffa4cd01e"
-      commit_comment="Update to disable pinging"
+      commit_id="4eb6d9decd3adff27d7ca96ab93452d8f5c674e6"
+      commit_comment="Update"
       poll_time="10000">
    </from_mapper>
    <message_filter
