@@ -9,8 +9,8 @@
    </to_channel>
    <from_mapper
       guid="Email_Automation_Notifications-From-xZoEPUQ9DlyUzK"
-      commit_id="9c0e1c59cd3972e53a296a63f8af4c54cb9d600d"
-      commit_comment="Update"
+      commit_id="b11b741a545a404cf76f768eac0f76a811d596a9"
+      commit_comment="Update enable and disable functions to run twice."
       poll_time="10000">
    </from_mapper>
    <message_filter

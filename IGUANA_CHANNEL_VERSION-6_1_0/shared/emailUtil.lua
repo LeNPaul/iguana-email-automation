@@ -34,7 +34,9 @@ function emailUtil.enable()
 
    local callUrl = 'http://localhost:5000/enable'
 
-   retry.call{func=callAPI, arg1=callUrl,retry=4, pause=45}
+   for i=1, 2 do
+      retry.call{func=callAPI, arg1=callUrl,retry=4, pause=45}
+   end
 
 end
 
@@ -42,7 +44,9 @@ function emailUtil.disable()
 
    local callUrl = 'http://localhost:5000/disable'
 
-   retry.call{func=callAPI, arg1=callUrl,retry=4, pause=45}
+   for i=1, 2 do
+      retry.call{func=callAPI, arg1=callUrl,retry=4, pause=45}
+   end
 
 end
 
