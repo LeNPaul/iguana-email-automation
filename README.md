@@ -6,3 +6,4 @@ Iguana channels for running Python scripts for automating email processes. Conta
  * Update scheduling module for more refined scheduling ability.
    * Instead of running one task once a day every day, run more than one task and be able to customize times of the day, which days, etc.
  * Combine two channels into one.
+ * Refactor logic for excluding holidays.
