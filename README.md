@@ -9,4 +9,5 @@ This repository contains Iguana channels for running Python scripts for automati
  * Refactor logic for excluding holidays.
  * Potentially put this all in a Python application.
    * Instead of using Iguana channel for scheduling and email notification, use Python application.
+   * Using a production Flask Python server will be more reliable.
  * There will be an update on May which will break this program, and requires changes when this happens.
