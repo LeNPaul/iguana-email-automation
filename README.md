@@ -5,7 +5,6 @@ This repository contains Iguana channels for running Python scripts for automati
 ### To Do
  * Update scheduling module for more refined scheduling ability.
    * Instead of running one task once a day every day, run more than one task and be able to customize times of the day, which days, etc.
- * Combine two channels into one.
  * Refactor logic for excluding holidays.
  * Potentially put this all in a Python application.
    * Instead of using Iguana channel for scheduling and email notification, use Python application.
