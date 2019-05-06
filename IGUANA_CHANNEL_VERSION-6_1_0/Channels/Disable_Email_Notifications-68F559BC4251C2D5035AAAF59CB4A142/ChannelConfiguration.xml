@@ -9,8 +9,8 @@
    </to_channel>
    <from_mapper
       guid="Disable_Email_Notifications-From-XqzdGMt8yH0jkT"
-      commit_id="b11b741a545a404cf76f768eac0f76a811d596a9"
-      commit_comment="Update enable and disable functions to run twice."
+      commit_id="3566b6dcc371f8ac6a358e3d36d788c93c02b802"
+      commit_comment="Update holidays for 2019."
       poll_time="10000">
    </from_mapper>
    <message_filter
